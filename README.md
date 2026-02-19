@@ -50,5 +50,6 @@ with a scalable, repeatable pipeline.
 
 ## Data source
 
-IMF World Economic Outlook Database, April 2024  
-https://imf.org/en/Publications/WEO
+IMF World Economic Outlook Database, April 2025  
+[https://imf.org/en/Publications/WEO
+](https://www.imf.org/en/publications/weo/weo-database/2025/april)
