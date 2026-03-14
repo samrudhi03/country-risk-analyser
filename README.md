@@ -11,12 +11,6 @@ This project demonstrates how a structured LLM pipeline can automate the generat
 
 ---
 
-## About
-
-Built to demonstrate practical LLM application to financial risk data workflows - specifically how large language models can augment analyst workflows by generating structured, auditable country risk insights from raw macroeconomic indicators. Demonstrated across 12 representative economies spanning high, medium, and low risk profiles, with architecture designed to scale to full IMF WEO coverage of 190+ countries.
-
----
-
 ## What This Solves
 
 | Without This Pipeline | With This Pipeline |
@@ -104,6 +98,10 @@ pip install groq pandas
 4. Add your key to Cell 2 where it says `your-key-here`
 5. Run all cells top to bottom
 
+---
+## About
+
+Built to demonstrate practical LLM application to financial risk data workflows - specifically how large language models can augment analyst workflows by generating structured, auditable country risk insights from raw macroeconomic indicators. Demonstrated across 12 representative economies spanning high, medium, and low risk profiles, with architecture designed to scale to full IMF WEO coverage of 190+ countries.
 ---
 
 ## Data Source
