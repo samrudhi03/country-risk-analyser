@@ -5,9 +5,15 @@
 
 ## The Business Problem
 
-Country risk assessment is a critical function in asset management and investment banking. Traditionally, analysts manually review macroeconomic indicators across dozens of countries — a process that is time-consuming, inconsistent across teams, and difficult to scale.
+Country risk assessment is a critical function in asset management and investment banking. Traditionally, analysts manually review macroeconomic indicators across dozens of countries - a process that is time-consuming, inconsistent across teams, and difficult to scale.
 
 This project demonstrates how a structured LLM pipeline can automate the generation of country risk assessments from raw economic data, producing analyst-ready outputs in seconds rather than hours.
+
+---
+
+## About
+
+Built to demonstrate practical LLM application to financial risk data workflows - specifically how large language models can augment analyst workflows by generating structured, auditable country risk insights from raw macroeconomic indicators. Demonstrated across 12 representative economies spanning high, medium, and low risk profiles, with architecture designed to scale to full IMF WEO coverage of 190+ countries.
 
 ---
 
@@ -15,7 +21,7 @@ This project demonstrates how a structured LLM pipeline can automate the generat
 
 | Without This Pipeline | With This Pipeline |
 |---|---|
-| Analyst manually reviews IMF data per country | Pipeline demonstrated across 12 economies — architecture designed to scale to full IMF WEO coverage of 190+ countries |
+| Analyst manually reviews IMF data per country | Pipeline demonstrated across 12 economies - architecture designed to scale to full IMF WEO coverage of 190+ countries |
 | Inconsistent scoring across different analysts | Standardised risk framework applied uniformly |
 | Hours spent writing risk summaries | Executive summaries generated in seconds |
 | No audit trail on data quality | Built-in data quality flagging per country |
@@ -37,10 +43,10 @@ CSV Export → Power BI / Tableau Dashboard
 ```
 
 **Risk categories assessed:**
-- **Economic** — GDP growth, inflation, trade balance
-- **Financial** — Government borrowing, fiscal deficit, current account
-- **Political** — Policy risk inferred from macroeconomic instability signals
-- **Operational** — Business environment risk based on import/export dynamics
+- **Economic** - GDP growth, inflation, trade balance
+- **Financial** - Government borrowing, fiscal deficit, current account
+- **Political** - Policy risk inferred from macroeconomic instability signals
+- **Operational** - Business environment risk based on import/export dynamics
 
 **Output per country includes:**
 - Overall risk level (Low / Medium / High / Critical)
@@ -69,21 +75,21 @@ CSV Export → Power BI / Tableau Dashboard
 
 This pipeline is designed with responsible AI principles in mind:
 
-- **Data quality flagging** — every output includes a `data_quality_flag` field that surfaces missing, extreme, or potentially unreliable indicators before scores are used
-- **Human-in-the-loop** — outputs are framed as decision-support, not decision-making. Recommended actions are inputs to analyst judgment, not replacements for it
-- **Auditability** — all prompt logic is version-controlled and transparent; scoring rationale is included in every output
-- **Source transparency** — data sourced exclusively from IMF World Economic Outlook (April 2024), a credible and publicly documented source
-- **Limitations acknowledged** — political risk is inferred from economic signals only; geopolitical events and qualitative factors are outside scope
+- **Data quality flagging** - every output includes a `data_quality_flag` field that surfaces missing, extreme, or potentially unreliable indicators before scores are used
+- **Human-in-the-loop** - outputs are framed as decision-support, not decision-making. Recommended actions are inputs to analyst judgment, not replacements for it
+- **Auditability** - all prompt logic is version-controlled and transparent; scoring rationale is included in every output
+- **Source transparency** - data sourced exclusively from IMF World Economic Outlook (April 2024), a credible and publicly documented source
+- **Limitations acknowledged** - political risk is inferred from economic signals only; geopolitical events and qualitative factors are outside scope
 
 ---
 
 ## Tech Stack
 
-- **Python** — pipeline orchestration and data processing
-- **pandas** — data cleaning, indicator selection, CSV export
-- **Groq API + LLaMA 3.3 70B** — LLM reasoning engine for risk classification
-- **Power BI / Tableau** — downstream visualisation and dashboard
-- **IMF World Economic Outlook April 2024** — source data (190+ countries available, 8 macroeconomic indicators — pipeline demonstrated across 12 representative economies)
+- **Python** - pipeline orchestration and data processing
+- **pandas** - data cleaning, indicator selection, CSV export
+- **Groq API + LLaMA 3.3 70B** - LLM reasoning engine for risk classification
+- **Power BI / Tableau** - downstream visualisation and dashboard
+- **IMF World Economic Outlook April 2024** — source data (190+ countries available, 8 macroeconomic indicators - pipeline demonstrated across 12 representative economies)
 
 ---
 
